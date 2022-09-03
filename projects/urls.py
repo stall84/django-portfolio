@@ -19,5 +19,6 @@ from django.urls import include, path
 from projects import views
 
 urlpatterns = [
-    path("", views.project_list, name="project list"),
+    path("", views.all_projects, name="all projects"),
+    path("list", views.project_list, name="project list"),
 ]
